@@ -1,0 +1,12 @@
+Servo servo1;
+
+servo1 = hardwareMap.get(Servo.class, "servo1");
+
+//rotates from 0-1 and can only go to hundredth decimal.
+if (gamepad1.a){
+  servo.setPosition(0.15);
+}
+
+else{
+  servo.setPosition(0);
+}
